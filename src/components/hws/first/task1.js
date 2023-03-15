@@ -39,12 +39,12 @@ const Task1 = () => {
     const handleButtonClick = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`http://3.90.85.119:8000/weather?city=${city}`);
+            const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}/next12hours?key=Q9FH7HGQAXYQM4GGQFBHMEC3S&include=hours`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
             const data = await response.json();
-            setWeatherData(removeObjectsWithNullValues(data));
+            setWeatherData(removeObjectsWithNullValues(data?.days?.[0]?.hours));
             setError(null);
         } catch (error) {
             setWeatherData([]);
@@ -79,7 +79,7 @@ const Task1 = () => {
                     {weatherData.map((data) => (
                         <StyledItem key={data.datetime}>
                             <div>{data.datetime}</div>
-                            <div>{data.temp}°C</div>
+                            <div>{data.temp} F</div>
                             <div>{data.conditions}</div>
                         </StyledItem>
                     ))}

@@ -18,7 +18,7 @@ function Footer() {
     const year = new Date().getFullYear();
     return (
         <FooterContainer>
-            <Text>© {year} Куриленко Олександра, Рябченко Нікіта, Марченко Михайло, Семиренко Юрій</Text>
+            <Text>© {year} Куриленко Олександра, Рябченко Нікіта, Марченко Михайло, Семеренко Юрій</Text>
         </FooterContainer>
     );
 }

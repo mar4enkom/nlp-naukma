@@ -12,10 +12,9 @@ const StyledTypography = styled(Typography)({
 });
 
 const StyledLink = styled(Typography)(({disabled}) => ({
-    color: disabled ? "rgba(35,35,35,0.29)" : "rgba(35,35,35,1)",
+    color: disabled ? "rgba(35,35,35,0.29)" : "rgba(35,35,35, 1)",
     marginRight: "70px",
     cursor: "pointer",
-
     pointerEvents: disabled && "none",
 }))
 

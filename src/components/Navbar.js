@@ -28,13 +28,13 @@ function Navbar() {
                     </Link>
                 </StyledTypography>
                 <Link to="/hw-1">
-                    <StyledLink>ДЗ 1</StyledLink>
+                    <StyledLink>HW 1</StyledLink>
                 </Link>
                 <StyledLink disabled>
-                    ДЗ 2 <Chip size="small" label="Coming Soon" color="primary" style={{marginLeft: "5px"}}/>
+                    HW 2 <Chip size="small" label="Coming Soon" color="primary" style={{marginLeft: "5px"}}/>
                 </StyledLink>
                 <StyledLink disabled>
-                    ДЗ 3 <Chip size="small" label="Coming Soon" color="primary" style={{marginLeft: "5px"}}/>
+                    HW 3 <Chip size="small" label="Coming Soon" color="primary" style={{marginLeft: "5px"}}/>
                 </StyledLink>
             </Toolbar>
         </StyledAppBar>
